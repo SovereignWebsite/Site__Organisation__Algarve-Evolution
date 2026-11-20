@@ -6,6 +6,20 @@
 <title>Algarve Evolution: private preview</title>
 <meta name="description" content="Algarve Evolution: an MVP in private preview. Scan, paste or drop the QR code you were given to open it.">
 <meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Algarve Evolution: private preview">
+<meta property="og:description" content="An MVP in private preview. It opens only with its QR code.">
+<meta property="og:url" content="https://algarve-evolution.organisation.sovereignweb.site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Algarve Evolution">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://algarve-evolution.organisation.sovereignweb.site/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Algarve Evolution: a private preview that opens only with its QR code">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Algarve Evolution: private preview">
+<meta name="twitter:description" content="An MVP in private preview. It opens only with its QR code.">
+<meta name="twitter:image" content="https://algarve-evolution.organisation.sovereignweb.site/share-card.jpg">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src 'self' about: data:; connect-src 'self'; object-src 'none'; base-uri 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="theme-color" content="#140b24">
@@ -39,7 +53,7 @@ h1 span{background:linear-gradient(90deg,var(--fg),var(--accent));-webkit-backgr
 .box h2{margin:0 0 .3rem;font-size:1.25rem;letter-spacing:-.01em}.box>p{margin:0 0 1.1rem;font-size:.95rem;color:var(--muted)}
 .drop{display:flex;align-items:center;gap:1rem;padding:1.1rem;border:2px dashed var(--line);border-radius:14px;margin-bottom:1rem;cursor:pointer;transition:border-color .15s,background .15s}
 .drop:hover{border-color:var(--accent);background:rgba(163,112,247,.08)}
-.drop svg{flex:none;width:44px;height:44px;color:var(--accent)}.drop b{display:block}.drop span{font-size:.88rem;color:var(--muted)}
+.drop svg{flex:none;width:44px;height:44px;color:var(--accent)}.drop-t{display:block}.drop b{display:block}.drop span{font-size:.88rem;color:var(--muted)}
 .or{display:flex;align-items:center;gap:.75rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:0 0 1rem}
 .or:before,.or:after{content:"";flex:1;height:1px;background:var(--line)}
 .row{display:flex;gap:.5rem}.row input{flex:1;min-width:0}
@@ -80,7 +94,7 @@ a{color:var(--accent)}
   <p>If you were sent its QR code, scan it with your phone camera, or bring it here.</p>
   <label class="drop" for="file">
     <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 16V8a2 2 0 0 1 2-2h8M32 6h8a2 2 0 0 1 2 2v8M42 32v8a2 2 0 0 1-2 2h-8M16 42H8a2 2 0 0 1-2-2v-8"/><rect x="14" y="14" width="8" height="8" rx="1"/><rect x="26" y="14" width="8" height="8" rx="1"/><rect x="14" y="26" width="8" height="8" rx="1"/><path d="M26 26h3v3M34 26v8h-8"/></svg>
-    <div><b>Drop the QR code image</b><span>anywhere on this page, or click to choose it</span></div>
+    <span class="drop-t"><b>Drop the QR code image</b><span>anywhere on this page, or click to choose it</span></span>
   </label>
   <input id="file" type="file" accept="image/*,.zip,application/zip" hidden>
   <div class="or">or paste</div>
