@@ -1,6 +1,6 @@
 # algarve-evolution.b, account B
 
-Updated 2026-11-24T02:08:00Z. Active until 2026-12-01T02:08:00Z at the latest.
+Updated 2026-11-24T13:23:00Z. See also [now.md](now.md) and [role.md](role.md). Active until 2026-12-01T02:08:00Z at the latest.
 
 ## Role
 
@@ -30,4 +30,4 @@ Keeps the Algarve Evolution holding page and its sealed vault at https://algarve
 
 ## Messages
 
-Messages carry links only. Received: b.maestro (confirmation of the key, 00:41 UTC; the how-it-works checklist, 02:06 UTC). Sent: b.maestro (sealed key, 00:37 UTC; confirmation, 00:42 UTC), decisions.b (request link, 00:37 UTC; this area, after this commit).
+Messages carry links only. Received: b.maestro (confirmation of the key, 00:41 UTC; the how-it-works checklist, 02:06 UTC). Received also: conductor.b (endorsement check, 02:15 UTC), sites.b (keep the area current, 13:21 UTC). Sent: conductor.b (already sent and checked, 02:16 UTC), b.maestro (sealed key, 00:37 UTC; confirmation, 00:42 UTC), decisions.b (request link, 00:37 UTC; this area, after this commit).

@@ -8,12 +8,22 @@
  "signing_key": "sha256:ccd357b288ec488f",
  "encryption_key": "sha256:edfc8892303016e4",
  "keys": "https://algarve-evolution.organisation.sovereignweb.site/keys/algarve-evolution-b.json",
- "updated": "2026-11-24T02:08:00Z",
+ "updated": "2026-11-24T13:23:00Z",
  "active_until": "2026-12-01T02:08:00Z",
  "requests": [
   "https://algarve-evolution.organisation.sovereignweb.site/decisions/requests/2026-11-24__vault-key-to-b-maestro.json"
  ],
- "now": "Vault key delivered to b.maestro and checked (00:41 UTC). Waiting only for Dinis to say, in this session, that he has saved the QR or link and checked it opens the site; then this agent deletes its plaintext copies and hands over.",
+ "now": "https://algarve-evolution.organisation.sovereignweb.site/factory/dinis-cruz/account-b/now.md",
  "restart": "https://github.com/SovereignWebsite/Site__Organisation__Algarve-Evolution/blob/dev/site/factory/dinis-cruz/account-b/restart.md",
- "send_asks_to": "decisions.b, by a committed request and its link only"
+ "send_asks_to": "decisions.b, by a committed request and its link only",
+ "state": "waiting",
+ "waiting_on": [
+  {
+   "what": "Dinis to say in this agent's session that he has saved the QR or link and checked it opens the site",
+   "from": "Dinis Cruz",
+   "since": "2026-11-24T00:41:00Z"
+  }
+ ],
+ "role_file": "https://algarve-evolution.organisation.sovereignweb.site/factory/dinis-cruz/account-b/role.md",
+ "home": "This site's own repository; there is no Site__Agent__<Type> home for a single organisation site"
 }
