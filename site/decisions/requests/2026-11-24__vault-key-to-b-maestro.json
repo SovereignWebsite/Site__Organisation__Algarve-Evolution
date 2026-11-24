@@ -1,0 +1,49 @@
+{
+ "v": 1,
+ "id": "2026-11-24__vault-key-to-b-maestro",
+ "agent": "algarve-evolution.b@SovereignWebsite.dinis",
+ "account": "B",
+ "asked_at": "2026-11-24T00:45:00Z",
+ "session": "https://claude.ai/code/session_01Kw9UwDDHfm3RVNtWomz2XA",
+ "title": "How the read key of the Algarve Evolution vault reaches b.maestro, as Dinis ruled every vault key must",
+ "change": {
+  "repository": "SovereignWebsite/Site__Organisation__Algarve-Evolution",
+  "branch": "dev",
+  "paths": [
+   "site/private/60906390166069ac.zip"
+  ],
+  "commits": [
+   "b633445fe2e22fa2d71e5a7a4005407e9e61499a"
+  ],
+  "patch_ids": []
+ },
+ "why": "Dinis ruled on 24 Nov 2026 at 00:19:04 UTC (decisions.b's session, event 75c313ce): every vault key should always be given to the maestro. The vault for https://algarve-evolution.organisation.sovereignweb.site (vault id vmly2zkr, 310 files: every version of the old site, its PDFs and other files) was sealed and is live. Its read key exists only in this agent's container, plus a copy sealed at 00:26 UTC to b.maestro's published encryption key. Sending that sealed copy by session message was refused by the session's permission check at 00:28 UTC (sensitive information) and was not retried or worked round; conductor.b reports perspace.b and sotavento.b hit the same refusal. Until the key reaches b.maestro, and Dinis says he has saved the QR, this agent keeps every copy and cannot finish its handover or delete its plaintext copies.",
+ "checks": [
+  "b.maestro's encryption key: taken from its published entry in the Factory's team/keys.json; the entry is identical at three revisions; three commits carrying it verify as good SSH signatures; b.maestro's own session states the same fingerprints; the fingerprints were recomputed from the public keys and match",
+  "seal: done at 00:26 UTC with sgit pki encrypt to that key; the sealed file is mode 600 in this agent's container and has not left it",
+  "vault: opened from the live site with the key, reloaded with the saved key, forgotten, folder links, PDF download and anchors all checked",
+  "site pipeline: green at v0.1.2 (build, share check, leak scan including the zip's ciphertext, html-validate, axe)",
+  "this request holds no key, no sealed key and no proof value"
+ ],
+ "kind": "access",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": false,
+  "one_way_door": true,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) Dinis says yes, in this agent's own session, to sending the sealed copy (readable only with b.maestro's private key) to b.maestro by session message. b.maestro then proves it opened the vault by giving the file count and a hash prefix of one file, which this agent checks against its private record without revealing it.",
+  "b) Dinis takes the QR himself: this agent sends the QR image to Dinis in its own session only, and Dinis saves it into b.maestro's vault and his master vault of vaults by hand.",
+  "c) A route decisions.b or b.maestro already runs for vault keys from other sites (perspace.b and sotavento.b are waiting on the same thing), if Dinis prefers one route for all."
+ ],
+ "recommendation": "a), or c) if one shared route is set for all sites; b) as a fallback if the permission check refuses a) even with Dinis's yes. Giving a key out cannot be undone, hence the one-way-door flag.",
+ "needed_by": "2026-11-24T18:00:00Z",
+ "links": [
+  "https://algarve-evolution.organisation.sovereignweb.site/",
+  "https://decisions.agents.sovereignweb.site/records/2026-11-24__decision-requests.json",
+  "https://raw.githubusercontent.com/SovereignWebsite/SovereignWebsite__Factory/dev/team/keys.json"
+ ]
+}
